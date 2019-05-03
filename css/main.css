@@ -89,9 +89,13 @@ h1,h2{
   color: hsl(0, 0%, 100%);
   font-weight: lighter;
   background-image: url('../images/bg-curvy-mobile.svg');
-  background-position:center;
+  background-position: bottom;
   background-repeat: no-repeat;
   padding-bottom: 2em;
+}
+
+.hero-contain{
+
 }
 
 .center-hero-info{
@@ -377,7 +381,82 @@ background: linear-gradient(to right, #6dd5ed, #2193b0);
   color: white;
 }
 
-.fa-instagram,
-.fa-facebook-f,
-.fa-twitter {
+/* ===================== MEDIA QUERY =================== */
+
+/* ===================== DESKTOP =================== */
+
+@media (min-width: 1025px) {
+
+  .main-header{
+    justify-content: space-around;
+  }
+
+  .hero-img {
+    width: 50%;
+  }
+
+  .logo{
+    width: 75%;
+  }
+
+  .nav-li a {
+    padding-right: 2em;
+  }
+
+  .hero-contain{
+    width: 50%;
+  }
+
+  .center-hero-info{
+    width: 80%;
+  }
+
+  .center-hero-info h1 {
+    font-size: 2em;
+  }
+
+  .hero{
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-position: bottom;
+  }
+
+  .features-grid{
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, minmax(400px, 1fr));
+  }
+
+  .contain-feature{
+    width: 60%;
+  }
+
+  .contain-feature-big{
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .feature-img-big{
+    width: 70%;
+    margin-left: 2em;
+  }
+
+  .feature-small {
+    width: 50%;
+    margin-left: 2em;
+    padding: 0 2em 0 0;
+  }
+
+  .feature-h2{
+    font-size: 2em;
+  }
+
+  .team-grid{
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto;
+  }
+
+  .sign-in-contain{
+    width: 70%;
+  }
+
 }
