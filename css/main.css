@@ -249,7 +249,7 @@ background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, F
 .main-footer{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, minmax(100px, 200px));
+  grid-template-rows: repeat(4, minmax(200px, 300px));
   background-color: hsl(216, 53%, 9%);
 }
 
@@ -296,11 +296,88 @@ input[type="text"] {
   margin-top: 2em;
   border: 1px solid hsl(176, 68%, 64%);
   background: #2193b0;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+background: linear-gradient(to right, #6dd5ed, #2193b0);
   color: white;
   width: 280px;
   height: 50px;
   border-radius: 20px;
+}
+
+/* ===================== FOOTER =================== */
+
+
+.info-width{
+  width: 80%;
+  margin: auto;
+}
+
+
+.info-p {
+  color: hsl(0, 0%, 100%);
+  padding-left: 1em;
+}
+
+.info-div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-brand {
+  margin-bottom: 1em;
+}
+
+.location-img {
+  margin-bottom: 3.5em;
+}
+
+.about-contain{
+  width: 80%;
+  margin: auto;
+}
+
+.about-ul{
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2em;
+}
+
+.about-ul li {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1em;
+  padding-bottom: 1em;
+}
+
+.about-ul li:nth-last-child(1){
+  padding-bottom: 2em;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-contain{
+  width: 30%;
+  padding-bottom: 3em;
+}
+
+.social-ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-ul li a {
+  color: white;
+}
+
+.fa-instagram,
+.fa-facebook-f,
+.fa-twitter {
 }
