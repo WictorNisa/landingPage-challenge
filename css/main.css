@@ -457,6 +457,43 @@ background: linear-gradient(to right, #6dd5ed, #2193b0);
 
   .sign-in-contain{
     width: 70%;
+    grid-column: 1 / 4;
+  }
+
+  .sign-in-h2{
+    font-size: 3em;
+  }
+
+  .sign-in-p{
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .sign-in-button{
+    margin-top: 0;
+    width: 25%;
+  }
+
+  input[type="text"]{
+    width: 60%;
+  }
+
+  .button-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main-footer{
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, minmax(300px, 400px));
+  }
+
+
+  .info-contain{
+    display: flex;
+    flex-direction: row;
   }
 
 }
