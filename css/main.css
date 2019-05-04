@@ -455,6 +455,10 @@ background: linear-gradient(to right, #6dd5ed, #2193b0);
     margin: auto;
   }
 
+  .team-contain{
+    grid-row: 2 / 3;
+  }
+
   .sign-in-contain{
     width: 70%;
     grid-column: 1 / 4;
@@ -494,6 +498,22 @@ background: linear-gradient(to right, #6dd5ed, #2193b0);
   .info-contain{
     display: flex;
     flex-direction: row;
+  }
+
+  .about-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about{
+    display: flex;
+    align-items: center;
+  }
+
+  .social-media{
+    justify-content: center;
   }
 
 }
